@@ -5,10 +5,9 @@
     "description": "An extension helping you to reduce continuous screen time.",
     "homepage_url": "https://github.com/astonizer/eye-away",
     "icons": {
-        "48": ""
+        "48": "icons/eye-48.png"
     },
     "permissions": [
-        "tabs",
         "alarms"
     ],
     "page_action": {
