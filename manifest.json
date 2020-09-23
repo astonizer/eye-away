@@ -1,5 +1,21 @@
 {
     "manifest_version": 2,
     "name": "Eye Away",
-    "version": "1.0"
+    "version": "1.0",
+    "description": "An extension helping you to reduce continuous screen time.",
+    "homepage_url": "https://github.com/astonizer/eye-away",
+    "icons": {
+        "48": ""
+    },
+    "permissions": [
+        "tabs",
+        "alarms"
+    ],
+    "page_action": {
+        "default_icon": "icons/chillout-32.png",
+        "default_title": "Eye Away"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
 }
