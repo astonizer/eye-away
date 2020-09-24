@@ -2,13 +2,19 @@ const name = "eye-break";
 let delayInMinutes = 0.1;
 let periodInMinutes = delayInMinutes;
 
-// Process to run on alarm
+// Alarm checker function
 function processAlarm(alarm) {
     if(alarm) {
-        console.log(alarm);
+        eyeBreak();
     } else {
         console.log("No alarm detected")
     }
+}
+
+// Instructing user to take break
+function eyeBreak() {
+    // Open image of nature
+    // Close the new tab
 }
 
 // Creating alarm on starting the browser
