@@ -17,6 +17,19 @@ function eyeBreak() {
     // Close the new tab
 }
 
+// Incoming handler function 
+function handleIncomingMessages(message) {
+    if(message.command === "on") {
+        console.log("on state");
+    } else if(message.command === "off") {
+        console.log("off state");
+    } else if(message.command === "reset") {
+        console.log("reset state");
+    } else if(message.command === "set") {
+        console.log("set state as", message.period, "mins");
+    }
+}
+
 // Creating alarm on starting the browser
 browser.alarms.create(name, {
     delayInMinutes,
@@ -27,3 +40,6 @@ browser.alarms.create(name, {
 browser.alarms.onAlarm.addListener((alarm) => {
     processAlarm(alarm);
 });
+
+// Listening to messages
+browser.runtime.onMessage.addListener(handleIncomingMessages)
