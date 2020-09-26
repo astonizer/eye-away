@@ -14,18 +14,17 @@
         </label>
     </div>
     <div class="alarm_period">
-        <form method="post">
-            <div class="range">
-                <div class="range_toggle">
-                    <label for="period">Enter alarm period</label>
-                    <input type="range" id="period" name="period" value="20" min="10" max="60">
-                </div>
-                <div class="range_display">
-                    20 mins
-                </div>
+        <div class="range_toggle">
+            <label for="period">Enter period</label>
+            <input type="range" id="period" name="period" value="20" min="10" max="60" step="5">
+        </div>
+        <div class="range_buttonAndDisplay">
+            <div class="period_text">
+                <span id="period_info"></span>
+                <span>mins</span>
             </div>
-            <input type="submit" name="submit" id="submit">
-        </form>
+            <button id="submit">Set</button>
+        </div>
     </div>
     <div class="alarm_tools">
         <div class="alarm_timeLeft">
@@ -33,5 +32,6 @@
         </div>
         <button>Reset</button>
     </div>
+    <script src="popup.js"></script>
 </body>
 </html>

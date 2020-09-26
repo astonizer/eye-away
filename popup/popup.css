@@ -67,3 +67,67 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
+
+/* User period input */
+.alarm_period {
+    padding: 2px;
+    margin-bottom: 12px;
+}
+
+.alarm_period .range_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.alarm_period .range_toggle label { 
+    margin-right: 12px
+}
+
+.alarm_period .range_buttonAndDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.alarm_period .range_buttonAndDisplay button {
+    border: none;
+    background-color: #cdd4da;
+    border-radius: 115px;
+    padding: 6px 22px;
+    font-size: 1em;
+    margin-left: 22px;
+}
+
+.alarm_period .range_buttonAndDisplay button:hover {
+    background-color: #dde4e9;
+}
+
+/* Time left and reset */
+.alarm_tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alarm_tools .alarm_timeLeft {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 6px 23px;
+    font-size: 1.6em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.alarm_tools button {
+    border: none;
+    background-color: #cdd4da;
+    border-radius: 115px;
+    padding: 4px 14px;
+    font-size: 0.86em;
+    margin-left: 22px;
+}
+
+.alarm_tools button:hover {
+    background-color: #dde4e9;
+}
